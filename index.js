@@ -15,7 +15,7 @@ app.get("/job/:id", function (req, res) {
 app.get("/jobs", function (req, res) {
   res.send(Object.values(jobs));
 });
-const port = process.env.port || 5000;
+const port = process.env.PORT || 5000;
 app.listen(port, function () {
   console.log(`CORS-enabled web server listening on port ${port}`);
 });
