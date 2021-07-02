@@ -3,6 +3,8 @@ name: Heroku-CD
 on:
   push:
     branches: [master]
+  merge:
+    branches: [master]
 
 jobs:
   build:
